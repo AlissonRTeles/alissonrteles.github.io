@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Álisson Rodrigues Teles</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $( document ).ready(function(){
+            
+            $('.tooltipped').tooltip();
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+                autoplay: true
+            });
+
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
+
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+            });
+            
+        
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+        <nav>
+        <div class="nav-wrapper grey darken-4">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#section1">Sobre</a></li>
+            <li><a href="#section2">Tecnologias</a></li>
+            <li><a href="#section3">Meus Serviços</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    
+    <div class="section grey darken-4">
+        <div class="row">
+            <div class="col s2 m2 offset-s5 offset-m5">
+                <img class="circle responsive-img" src="icons/profile.jpg">
+            </div>
+        </div> 
+        <center>
+            <code><h5 class="white-text">print("Olá eu sou o Álisson, no que posso te ajudar hoje?");</h5></code>
+            <a class="waves-effect waves-light btn blue" href="mailto:alisson.rteles@icloud.com?Subject=Orçamento">Enviar Email</a>
+        </center>
+    </div>
+    
+    <div class="section grey lighten-5" id="section1">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p class="grey-text text-darken-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+
+    <div class="section grey lighten-3" id="section2">
+        <div class="container">
+            <h2>Tecnologias</h2>
+            <p class="grey-text text-darken-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>    
+        </div>
+    </div>
+    
+    <div class="section grey lighten-5" id="section3">
+        <div class="container">
+            <h2>Meus Serviços</h2>
+            <div class="row">
+                <div class="col s12 m4 center">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator responsive-img " src="icons/19858.jpg">
+                          
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Dev<i class="material-icons right">more_vert</i></span>
+                          <!-- <p><a href="#">This is a link</a></p> -->
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Dev<i class="material-icons right">close</i></span>
+                          <p>Desenvolvimento de sites e aplicativos em geral</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12 m4 center">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="icons/13452.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Consultor<i class="material-icons right">more_vert</i></span>
+                          <!-- <p><a href="#">This is a link</a></p> -->
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Consultor<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12 m4 center">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="icons/18765.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Suporte<i class="material-icons right">more_vert</i></span>
+                          <!-- <p><a href="#">This is a link</a></p> -->
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Suporte<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+                </div>
+          
+              </div>
+                    
+        </div>
+    </div>
+
+    <footer class="page-footer blue-grey lighten-2">
+        <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Entre em contato</h5>
+                <p class="grey-text text-lighten-4">Faça já seu orçamento. Me chama em alguma das minhas redes sociais:</p>
+                <div class="row">
+                    <div class="col s2 m2 center">
+                        <a href="https://www.instagram.com/alibabahlisson/"><img class="responsive-img" src="icons/iconfinder_Asset_16_2001652.svg"></a>
+                      </div>
+                      <div class="col s2 m2 center">
+                        <a href="https://www.linkedin.com/in/álisson-r-teles-41486032/"><img class="responsive-img" src="icons/iconfinder_Asset_5_2001647.svg"></a>
+                      </div>
+                      <div class="col s2 m2 center">
+                        <a href="https://api.whatsapp.com/send?phone=5554981463121&text=Ol%C3%A1%20vi%20seu%20site%20e%20estou%20afim%20de%20fazer%20um%20or%C3%A7amento!"><img class="responsive-img" src="icons/iconfinder_Asset_10_2001672.svg"></a>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Copyright 2020 Blu Dot. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
+      
