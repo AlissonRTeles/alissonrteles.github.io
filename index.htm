@@ -15,20 +15,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" language="javascript">
         $( document ).ready(function(){
-            
-            $('.tooltipped').tooltip();
-
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true,
-                autoplay: true
-            });
-
-            autoplay();
-            function autoplay() {
-                $('.carousel').carousel('next');
-                setTimeout(autoplay, 4500);
-            }
 
             // Add smooth scrolling to all links
             $("a").on('click', function(event) {
@@ -53,7 +39,9 @@
             } // End if
             });
             
-        
+          $('.sidenav').sidenav();
+            
+
         });
     </script>
   </head>
@@ -67,10 +55,18 @@
             <li><a href="#section2">Tecnologias</a></li>
             <li><a href="#section3">Meus Serviços</a></li>
             </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
         </nav>
+
     </div>
     
+    <ul id="slide-out" class="sidenav">
+      <li><a href="#section1" class="sidenav-close">Sobre</a></li>
+      <li><a href="#section2" class="sidenav-close">Tecnologias</a></li>
+      <li><a href="#section3" class="sidenav-close">Meus Serviços</a></li>
+    </ul>
+
     <div class="section grey darken-4">
         <div class="row">
             <div class="col s2 m2 offset-s5 offset-m5">
