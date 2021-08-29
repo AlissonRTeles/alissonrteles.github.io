@@ -4,206 +4,151 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Álisson Rodrigues Teles</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" language="javascript">
-        $( document ).ready(function(){
 
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-            });
-            
-          $('.sidenav').sidenav();
-            
-
-        });
-    </script>
   </head>
 
   <body>
-    <div class="navbar-fixed">
-        <nav>
-        <div class="nav-wrapper grey darken-4">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#section1">Sobre</a></li>
-            <li><a href="#section2">Tecnologias</a></li>
-            <li><a href="#section3">Meus Serviços</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-        </nav>
+    <div class="wrapper">
+      <div  id="particles-container">
 
+      </div>
+
+      <div class="card-presentation">
+        <div class="title">Álisson R. Teles</div>
+        <img src="/icons/profile.jpg" alt="image profile">
+      </div>
     </div>
-    
-    <ul id="slide-out" class="sidenav">
-      <li><a href="#section1" class="sidenav-close waves-effect waves-teal">Sobre</a></li>
-      <li><a href="#section2" class="sidenav-close waves-effect waves-teal">Tecnologias</a></li>
-      <li><a href="#section3" class="sidenav-close waves-effect waves-teal">Meus Serviços</a></li>
-    </ul>
-
-    <div class="section grey darken-4">
-        <div class="row">
-            <div class="col s2 m2 offset-s5 offset-m5">
-                <img class="circle responsive-img" src="icons/profile.jpg">
-            </div>
-        </div> 
-        <center>
-            <code><h5 class="white-text">>>print("Olá eu sou o Álisson, no que posso te ajudar hoje?")</h5></code>
-            <a class="waves-effect waves-light btn blue" href="mailto:alisson.rteles@icloud.com?Subject=Orçamento">Enviar Email</a>
-        </center>
-    </div>
-    
-    <div class="section grey lighten-5" id="section1">
-        <div class="container">
-            <h2>Sobre</h2>
-            <p class="grey-text text-darken-1">
-              Quando pequeno desmontava os brinquedos para ver o que tinha dentro e a partir disto surgiu o amor pela tecnologia.</br></br>
-              
-              Desenvolvedor há mais de 8 anos. Bacharel em Ciência da Computação pela Universidade de Caxias do Sul (UCS), com
-              diversos cursos de linguagem de programação e também de processos de desenvolvimento se software. </br></br>
-              
-              Ao término de um ciclo como Desenvolvedor da TOTVS RS, obtive como meta aprimorar meus processos e desenvolver projetos
-              independentes para contribuir com as empresas que não necessitam de um ERP complexo e de alto orçamento, mas sim algo
-              que faça sua rotina ser mais simples e com maior automatização.
-
-            </p>
-        </div>
-    </div>
-
-    <div class="section grey lighten-3" id="section2">
-        <div class="container">
-            <h2>Tecnologias</h2>
-            <p class="grey-text text-darken-1">Utilizamos tecnologias que propõem auxiliar e melhorar a sua rotina, sendo de grande importância para que os projetos de
-            sua empresa se mantenham em ordem e de forma organizada.</br> </br>
-            Projetando sempre o que há de mais novo no universo tecnológico e assim manter sua empresa ou serviço atualizado e dando
-            resultados positivos para seus projetos.
-            </p>    
-
-            <h5>Desenvolvimento Web:</h5>
-            <p class="grey-text text-darken-1">Trabalhamos com a linguagem de: PHP, Angular, JavaScript, HTML, CSS.</p>
-            <h5>Desenvolvimento App:</h5>
-            <p class="grey-text text-darken-1">Desenvolvimentos de aplicativos para os sistemas: Ionic, Android, iOS.</p>
-            <h5>Desenvolvimento Desktop:</h5>
-            <p class="grey-text text-darken-1">Linguagens trabalhadas: Java, SQL, AdvPL e Progress.</p>
-
-        </div>
-    </div>
-    
-    <div class="section grey lighten-5" id="section3">
-        <div class="container">
-            <h2>Meus Serviços</h2>
-            <div class="row">
-                <div class="col s12 m4 center">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator responsive-img " src="icons/19858.png">
-                          
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">Desenvolvimento<i class="material-icons right">more_vert</i></span>
-                          <!-- <p><a href="#">This is a link</a></p> -->
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Desenvolvimento<i class="material-icons right">close</i></span>
-                          <p class="grey-text text-darken-1">Desenvolvimento de sites e aplicativos conforme a sua demanda, atuando em projetos já em andamento ou desde o início.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col s12 m4 center">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="icons/13452.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">Consultoria<i class="material-icons right">more_vert</i></span>
-                          <!-- <p><a href="#">This is a link</a></p> -->
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Consultoria<i class="material-icons right">close</i></span>
-                          <p class="grey-text text-darken-1">Trabalhamos com o diagnóstico e formulação de soluções acerca de assuntos relacionados ao desenvolvimento de sua
-                          empresa. Auxiliando da melhor forma a melhoria de automatização por meio de uma opinião especializada.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col s12 m4 center">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="icons/18765.png">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">Suporte<i class="material-icons right">more_vert</i></span>
-                          <!-- <p><a href="#">This is a link</a></p> -->
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Suporte<i class="material-icons right">close</i></span>
-                          <p class="grey-text text-darken-1">Prestamos serviços de assistência intelectual para lhe ajudar com o seu sistema e que possa ter total controle e
-                          conhecimento sobre o produto que está lhe auxiliando em sua empresa. Lhe ajudamos a entender e a ser independente em
-                          relação ao sistema ou projeto que está adquirindo.</p>
-                        </div>
-                      </div>
-                </div>
-          
-              </div>
-                    
-        </div>
-    </div>
-
-    <footer class="page-footer blue-grey darken-2">
-        <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Entre em contato</h5>
-                <p class="grey-text text-lighten-4">Faça já seu orçamento. Me chama em alguma das minhas redes sociais:</p>
-                <div class="row">
-                    <div class="col s2 m1 l2 center">
-                        <a href="https://www.instagram.com/alibabahlisson/"><img class="responsive-img" src="icons/iconfinder_Asset_16_2001652.svg"></a>
-                      </div>
-                      <div class="col s2 m1 l2 center">
-                        <a href="https://www.linkedin.com/in/álisson-r-teles-41486032/"><img class="responsive-img" src="icons/iconfinder_Asset_5_2001647.svg"></a>
-                      </div>
-                      <div class="col s2 m1 l2 center">
-                        <a href="https://api.whatsapp.com/send?phone=5554981463121&text=Ol%C3%A1%20vi%20seu%20site%20e%20estou%20afim%20de%20fazer%20um%20or%C3%A7amento!"><img class="responsive-img" src="icons/iconfinder_Asset_10_2001672.svg"></a>
-                      </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                &copy; Copyright 2020 Blu Dot. Todos os direitos reservados.
-            </div>
-        </div>
-    </footer>
-
-     <!-- Compiled and minified JavaScript -->
+      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+  
+       var particlesJson = {
+          "particles": {
+            "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 8,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 4,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        };
+
+      particlesJS("particles-container", particlesJson);
+     </script>
   </body>
 </html>
       
